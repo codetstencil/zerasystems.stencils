@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZeraSystems.CodeNanite.WebAPI</RootNamespace>
+    <AssemblyName>ZeraSystems.WebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\WebAPI\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\build\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZeraSystems.CodeStencil.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\ZeraSystems.CodeStencil.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiModels\CreateApiModels.Functions.cs">
+      <DependentUpon>CreateApiModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApiModels\CreateApiModels.cs" />
+    <Compile Include="CreateController.cs" />
+    <Compile Include="CreateController.Functions.cs">
+      <DependentUpon>CreateController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateConverter.cs" />
+    <Compile Include="CreateConverter.Functions.cs">
+      <DependentUpon>CreateConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CreateEntities.Functions.cs">
+      <DependentUpon>CreateEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\CreateIRepositoryLinks.cs" />
+    <Compile Include="Repositories\CreateIRepositoryLinks.Functions.cs">
+      <DependentUpon>CreateIRepositoryLinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\CreateISupervisor.Functions.cs">
+      <DependentUpon>CreateISupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\CreateRepositoryLinks.Functions.cs">
+      <DependentUpon>CreateRepositoryLinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\CreateSupervisor.Functions.cs">
+      <DependentUpon>CreateSupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\CreateSupervisor1.cs" />
+    <Compile Include="Supervisor\CreateISupervisor.cs" />
+    <Compile Include="Repositories\CreateRepositoryLinks.cs" />
+    <Compile Include="Supervisor\CreateSupervisor.cs" />
+    <Compile Include="Supervisor\CreateSupervisor1.Functions.cs">
+      <DependentUpon>CreateSupervisor1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateViewModel.cs" />
+    <Compile Include="CreateViewModel.Functions.cs">
+      <DependentUpon>CreateViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CreateEntities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ZeraSystems.CodeStencil.Contracts.ISchemaItem.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\code-nanites\zerasystems.expansion\src\Expansion\Expansion.csproj">
+      <Project>{706e130a-0cec-477c-9e7d-b426533b29fb}</Project>
+      <Name>Expansion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)\*.dll  "$(SolutionDir)..\$(ProjectName)\Assemblies"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.   
+       Other similar extension points exist, see Microsoft.Common.targets.  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  -->
+</Project>

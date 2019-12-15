@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI.csproj", "{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expansion", "..\..\..\..\code-nanites\zerasystems.expansion\src\Expansion\Expansion.csproj", "{706E130A-0CEC-477C-9E7D-B426533B29FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}.Debug|x86.ActiveCfg = Debug|x86
+		{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}.Debug|x86.Build.0 = Debug|x86
+		{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}.Release|x86.ActiveCfg = Release|x86
+		{2866D0D9-122C-4F18-A313-C7FFCDB0FAC1}.Release|x86.Build.0 = Release|x86
+		{706E130A-0CEC-477C-9E7D-B426533B29FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706E130A-0CEC-477C-9E7D-B426533B29FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706E130A-0CEC-477C-9E7D-B426533B29FB}.Debug|x86.ActiveCfg = Debug|x86
+		{706E130A-0CEC-477C-9E7D-B426533B29FB}.Debug|x86.Build.0 = Debug|x86
+		{706E130A-0CEC-477C-9E7D-B426533B29FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706E130A-0CEC-477C-9E7D-B426533B29FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{706E130A-0CEC-477C-9E7D-B426533B29FB}.Release|x86.ActiveCfg = Release|x86
+		{706E130A-0CEC-477C-9E7D-B426533B29FB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {143A9F70-FD77-44E1-B62B-7CD445F8BA01}
+	EndGlobalSection
+EndGlobal
