@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeNaniteAssemblies>  
+  <CodeNanitePath>D:\projects-desktop\codestencil\custom-stencils\zerasystems.stencils\default\build</CodeNanitePath>  
+  <AssemblyLoadPath>D:\projects-desktop\codestencil\code-nanites\build\debug\ZeraSystems.CodeNanite.Expansion.dll</AssemblyLoadPath>  
+</CodeNaniteAssemblies> 
