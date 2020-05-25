@@ -100,12 +100,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="logo64x64.png" />
     <None Include="version.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy $(TargetFileName) "D:\projects-desktop\build\CodeStencil\CodeNanites" /y
+copy $(TargetName).pdb "D:\projects-desktop\build\CodeStencil\CodeNanites" /y
 copy $(TargetDir)\*.dll  "$(SolutionDir)..\$(ProjectName)\Assemblies"
 
 "D:\projects-desktop\codestencil\app\build-compile\signer.bat"   $(TargetPath)</PostBuildEvent>

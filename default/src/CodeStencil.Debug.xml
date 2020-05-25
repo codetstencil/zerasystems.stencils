@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeNaniteAssemblies>  
   <CodeNanitePath>D:\projects-desktop\codestencil\custom-stencils\zerasystems.stencils\default\build</CodeNanitePath>  
-  <AssemblyLoadPath>D:\projects-desktop\codestencil\code-nanites\build\debug\ZeraSystems.CodeNanite.Expansion.dll</AssemblyLoadPath>  
+  
+  <AssemblyLoadPath>D:\projects-desktop\build\CodeStencil\CodeNanites\ZeraSystems.CodeNanite.Default.dll</AssemblyLoadPath>  
+  <AssemblyLoadPath>D:\projects-desktop\build\CodeStencil\CodeNanites\ZeraSystems.CodeNanite.Expansion.dll</AssemblyLoadPath>  
+  <AssemblyLoadPath>D:\projects-desktop\build\CodeStencil\CodeNanites\ZeraSystems.CodeNanite.Schema.dll</AssemblyLoadPath>  
+  <AssemblyLoadPath>D:\projects-desktop\build\CodeStencil\CodeNanites\ZeraSystems.CodeNanite.Cshtml.dll</AssemblyLoadPath>  
 </CodeNaniteAssemblies> 
