@@ -76,13 +76,13 @@
       <Version>1.11.23</Version>
     </PackageReference>
     <PackageReference Include="ZeraSystems.CodeNanite.Cshtml">
-      <Version>1.3.0</Version>
+      <Version>1.3.2</Version>
     </PackageReference>
     <PackageReference Include="ZeraSystems.CodeNanite.Expansion">
-      <Version>1.3.0</Version>
+      <Version>1.3.2</Version>
     </PackageReference>
     <PackageReference Include="ZeraSystems.CodeNanite.Schema">
-      <Version>1.3.0</Version>
+      <Version>1.3.2</Version>
     </PackageReference>
     <PackageReference Include="ZeraSystems.CodeStencil.Contracts">
       <Version>1.3.0</Version>

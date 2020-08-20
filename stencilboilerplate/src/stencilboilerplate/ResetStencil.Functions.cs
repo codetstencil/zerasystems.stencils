@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using ZeraSystems.CodeNanite.Expansion;
-using ZeraSystems.CodeStencil.Contracts;
 
 namespace ZeraSystems.CodeNanite.Boilerplate
 {
@@ -11,15 +9,15 @@ namespace ZeraSystems.CodeNanite.Boilerplate
     {
         private void MainFunction()
         {
-            var description = GetExpansionString("TARGET_STENCIL_DESCR");
-            var stencil = GetExpansionString("PROJECT_NAME");
-            var outputFolder = GetExpansionString("OUTPUT_FOLDER").Replace("[%PROJECT_NAME%]", stencil);
-            var stencilFile = Path.Combine(outputFolder, stencil+".codestencil");
+            string description = GetExpansionString("TARGET_STENCIL_DESCR");
+            string stencil = GetExpansionString("PROJECT_NAME");
+            string outputFolder = GetExpansionString("OUTPUT_FOLDER").Replace("[%PROJECT_NAME%]", stencil);
+            string stencilFile = Path.Combine(outputFolder, stencil + ".codestencil");
 
-            var dataSource = "Data Source=" + stencilFile;
-            using (var context = new StencilContext(dataSource))
+            string dataSource = "Data Source=" + stencilFile;
+            using (StencilContext context = new StencilContext(dataSource))
             {
-                var result = context.StencilDetails.First();
+                StencilDetail result = context.StencilDetails.First();
                 if (result != null)
                 {
                     result.StencilName = stencil;
